@@ -1,0 +1,14 @@
+* {
+  border: 0px;
+  margin: 0px;
+}
+
+/* Element selectors */
+
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* class selectors */
