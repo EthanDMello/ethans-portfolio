@@ -21,13 +21,39 @@ body {
   font-family: tahoma;
 }
 
-h1 {
-  font-size: 46px;
-}
 header {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
+header h1 {
+  font-size: 25px;
+  display: block;
+  width: 100%;
+  background-color: var(--tan);
+}
+
+header img {
+  width: 300px;
+}
+
+footer {
+  position: absolute;
+  bottom: 0px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  border-top: 3px solid #000;
+  width: 100%;
+}
+
 /* class selectors */
+.Nfooter {
+  display: block;
+  height: 100%;
+  border-top: 3px solid #000;
+  border-left: 3px solid #000;
+  border-right: 3px solid #000;
+}
