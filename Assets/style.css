@@ -6,12 +6,12 @@
   --grey: #827777;
 }
 
+/* page and body */
 * {
   border: 0px;
   margin: 0px;
+  padding: 0px;
 }
-
-/* Element selectors */
 
 html,
 body {
@@ -19,10 +19,11 @@ body {
   font-family: tahoma;
 }
 
+/* header style */
 header {
-  border-top: 3px solid var(--black);
-  border-right: 3px solid var(--black);
-  border-left: 3px solid var(--black);
+  border-top: 3px solid var(--grey);
+  border-right: 3px solid var(--grey);
+  border-left: 3px solid var(--grey);
   position: relative;
   top: 0px;
   display: flex;
@@ -31,47 +32,71 @@ header {
 }
 
 header h1 {
-  font-size: 20px;
+  font-size: 2.6rem;
   display: flex;
+  color: var(--white);
   flex-direction: column;
-  align-items: center;
+  align-items: left;
   width: 100%;
   background-color: var(--tan);
   padding-top: 5px;
   padding-bottom: 5px;
+  font-weight: lighter;
 }
 
-header img {
-  width: 300px;
+header nav {
+  background-color: var(--grey);
+  font-size: 2rem;
+  width: 100%;
+}
+
+.navLinks {
+  text-decoration: none;
+  color: var(--white);
+}
+
+/* main style */
+main {
+  border-right: 3px solid var(--grey);
+  border-left: 3px solid var(--grey);
+  border-bottom: 3px solid var(--grey);
+}
+
+.aboutMe {
+  height: 400px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.aboutMe .text {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-size: 1.8rem;
+  width: 50%;
+  justify-content: center;
+  text-align: center;
+}
+
+.aboutMe .pp {
+  display: flex;
+  flex-direction: row;
+  align-self: center;
+  width: 50%;
+  padding: 0px;
+  justify-content: center;
+}
+
+.profilePicture {
+  width: 250px;
   border: 3px solid var(--black);
-  padding: 5px;
+  align-self: center;
 }
 
+/* footer style */
 footer {
   display: flex;
   flex-direction: column;
   align-items: center;
-}
-
-/* class selectors */
-
-.pageContent {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  position: relative;
-  min-height: 100vh;
-}
-
-main {
-  border-right: 3px solid var(--black);
-  border-left: 3px solid var(--black);
-  border-bottom: 3px solid var(--black);
-}
-
-.footerContent {
-  /* position: absolute;
-  bottom: 0px; */
-  width: 100%;
-  height: 2.5rem;
 }
