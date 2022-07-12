@@ -111,14 +111,34 @@ main {
 }
 
 /*           Project Cards */
+
+.myProjects {
+  background-color: var(--tan);
+  margin: 30px;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-bottom: 30px;
+}
+
 .myProjects h2 {
   text-align: center;
   font-size: 2.3rem;
+  padding: 7px;
 }
 
 .myProjects .cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 40px;
+  column-width: 20%;
+}
+
+.projectCard {
   display: flex;
-  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 300px;
+  border: 3px solid var(--black);
 }
 
 /* footer style */
