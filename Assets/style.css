@@ -147,7 +147,19 @@ main {
   justify-content: center;
   align-items: center;
   height: 300px;
+  width: 430px;
   border: 3px solid var(--black);
+}
+
+a,
+img {
+  width: 400px;
+}
+
+@media screen(max-width =  720px) {
+  #myProjects {
+    background-color: black;
+  }
 }
 
 /*        Contact Me */
