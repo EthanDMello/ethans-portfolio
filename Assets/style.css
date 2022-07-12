@@ -111,7 +111,6 @@ main {
 }
 
 /*           Project Cards */
-
 .myProjects {
   background-color: var(--tan);
   margin: 30px;
@@ -139,6 +138,31 @@ main {
   align-items: center;
   height: 300px;
   border: 3px solid var(--black);
+}
+
+/*        Contact Me */
+.contactMe {
+  background-color: var(--tan);
+  padding-bottom: 10px;
+  margin: 30px;
+}
+.contactMe h2 {
+  text-align: center;
+  font-size: 2.3rem;
+  padding: 7px;
+}
+.contactMe ul {
+  font-size: 2rem;
+  text-align: center;
+  list-style: none;
+  line-height: 2;
+}
+
+.contactMe ul a {
+  text-decoration: none;
+}
+.contactMe ul .bold {
+  font-weight: bold;
 }
 
 /* footer style */
