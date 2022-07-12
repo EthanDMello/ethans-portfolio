@@ -111,6 +111,15 @@ main {
 }
 
 /*           Project Cards */
+.myProjects h2 {
+  text-align: center;
+  font-size: 2.3rem;
+}
+
+.myProjects .cards {
+  display: flex;
+  flex-direction: row;
+}
 
 /* footer style */
 footer {
