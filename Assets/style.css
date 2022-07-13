@@ -54,6 +54,7 @@ header nav {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  flex-wrap: wrap;
   width: 30%;
   align-content: flex-end;
   padding-left: 10px;
@@ -150,13 +151,13 @@ main {
   justify-content: center;
   align-items: center;
   height: 300px;
-  width: 430px;
+  width: 400px;
   border: 3px solid var(--black);
 }
 
 a,
 img {
-  width: 400px;
+  width: 380px;
 }
 
 @media (max-width: 1480px) {
