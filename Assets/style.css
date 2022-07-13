@@ -122,6 +122,9 @@ main {
 
 /*           Project Cards */
 #myProjects {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   background-color: var(--tan);
   margin: 30px;
   padding-left: 30px;
@@ -156,9 +159,23 @@ img {
   width: 400px;
 }
 
-@media screen(max-width =  720px) {
+@media (max-width: 1480px) {
   #myProjects {
-    background-color: black;
+    background-color: blue;
+  }
+
+  #myProjects .cards {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 1020px) {
+  #myProjects {
+    background-color: yellow;
+  }
+
+  #myProjects .cards {
+    grid-template-columns: 1fr;
   }
 }
 
