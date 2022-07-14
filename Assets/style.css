@@ -147,6 +147,7 @@ main {
 
 .projectCard {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   height: 300px;
@@ -154,9 +155,9 @@ main {
   border: 3px solid var(--black);
 }
 
-a,
-img {
-  width: 400px;
+.projectCardImg {
+  max-width: 400px;
+  max-height: 200px;
 }
 
 @media (max-width: 1480px) {
@@ -177,6 +178,13 @@ img {
   #myProjects .cards {
     grid-template-columns: 1fr;
   }
+}
+
+figcaption {
+  font-size: 22px;
+  padding-top: 12px;
+  font-weight: bolder;
+  text-align: center;
 }
 
 /*        Contact Me */
