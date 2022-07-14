@@ -54,17 +54,18 @@ header nav {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  flex-wrap: wrap;
-  width: 30%;
+  width: 35%;
   align-content: flex-end;
   padding-left: 10px;
   padding-top: 3px;
+  min-width: 400px;
 }
 
 .navLinks {
   text-decoration: none;
   color: var(--white);
   font-size: 2rem;
+  width: 270px;
 }
 
 /* main style */
@@ -100,7 +101,7 @@ main {
   display: flex;
   flex-direction: row;
   align-items: center;
-  font-size: 1.8rem;
+  font-size: 2.6rem;
   width: 50%;
   justify-content: center;
   text-align: center;
@@ -116,7 +117,7 @@ main {
 }
 
 .profilePicture {
-  width: 250px;
+  width: 350px;
   border: 3px solid var(--black);
   align-self: center;
 }
@@ -132,6 +133,7 @@ main {
   padding-left: 30px;
   padding-right: 30px;
   padding-bottom: 30px;
+  flex-basis: 100%;
 }
 
 #myProjects h2 {
@@ -145,6 +147,7 @@ main {
   grid-template-columns: 1fr 1fr;
   gap: 40px;
   column-width: 20%;
+  align-self: center;
 }
 
 .cardFlex {
@@ -192,23 +195,47 @@ main {
   max-height: 200px;
 }
 
-@media (max-width: 1480px) {
-  #myProjects {
-    background-color: blue;
+/* Media query for one size smaller */
+@media (max-width: 950px) {
+  .projectCardFirst {
+    height: 350px;
+    width: 600px;
+  }
+  .projectCardImgFirst {
+    width: 450px;
   }
 
-  #myProjects .cards {
-    grid-template-columns: 1fr 1fr;
+  #myProjects .restOfCards {
+    grid-template-columns: 1fr;
+  }
+
+  .profilePicture {
+    width: 250px;
+  }
+
+  p {
+    font-size: 1.8rem;
   }
 }
 
-@media (max-width: 1020px) {
-  #myProjects {
-    background-color: yellow;
+@media (max-width: 700px) {
+  .projectCardFirst {
+    height: 200px;
+    width: 400px;
+  }
+  .projectCardImgFirst {
+    width: 270px;
+  }
+}
+
+/* Media query for phones */
+@media (max-width: 600px) {
+  .profilePicture {
+    width: 180px;
   }
 
-  #myProjects .cards {
-    grid-template-columns: 1fr;
+  p {
+    font-size: 1.2rem;
   }
 }
 
