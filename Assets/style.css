@@ -122,6 +122,7 @@ main {
 }
 
 /*           Project Cards */
+
 #myProjects {
   display: flex;
   flex-direction: column;
@@ -139,11 +140,36 @@ main {
   padding: 7px;
 }
 
-#myProjects .cards {
+#myProjects .restOfCards {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
   gap: 40px;
   column-width: 20%;
+}
+
+.cardFlex {
+  display: flex;
+  flex-direction: column;
+}
+
+/* first bigger project card styles */
+.soloCard {
+  align-self: center;
+  padding-bottom: 40px;
+}
+
+.projectCardFirst {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 500px;
+  width: 850px;
+  border: 3px solid var(--black);
+}
+
+.projectCardImgFirst {
+  width: 700px;
 }
 
 .projectCard {
@@ -156,13 +182,14 @@ main {
   border: 3px solid var(--black);
 }
 
+.projectCardImg:hover,
+.projectCardImgFirst:hover {
+  box-shadow: 10px 10px 10px var(--grey);
+}
+
 .projectCardImg {
   max-width: 400px;
   max-height: 200px;
-}
-
-.projectCardImgFirst {
-  width: 450px;
 }
 
 @media (max-width: 1480px) {
