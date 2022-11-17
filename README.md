@@ -1,4 +1,4 @@
-# Homework Week 2
+# Ethan D'Mello Portfolio
 
 Complete homework portfolio project with HTML and CSS files to fit the assessment criteria.
 
